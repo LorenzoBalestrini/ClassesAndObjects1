@@ -6,8 +6,8 @@ public class Programmer {
     public int age;
     public boolean wearGlasses;
 
-    public void drinkCoffee (){
-        System.out.println("Espresso is the secret!");
+    public String drinkCoffee (){
+        return "Espresso is the secret!";
     }
 
     public String printDetails (){
@@ -16,5 +16,11 @@ public class Programmer {
 
     public String hasGlasses(){
         return "Is " + name + " wearing glasses? - " + wearGlasses;
+    }
+
+    public Programmer(String name, int age, boolean wearGlasses){
+        this.name = name;
+        this.age = age;
+        this.wearGlasses = wearGlasses;
     }
 }

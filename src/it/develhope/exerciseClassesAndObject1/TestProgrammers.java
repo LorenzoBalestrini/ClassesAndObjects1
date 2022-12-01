@@ -3,20 +3,16 @@ package it.develhope.exerciseClassesAndObject1;
 public class TestProgrammers {
     public static void main(String[] args) {
 
-        Programmer programmer1 = new Programmer();
-        programmer1.name = "Lorenzo";
-        programmer1.age = 26;
-        programmer1.wearGlasses = true;
+        Programmer programmer1 = new Programmer("Lorenzo", 26, true);
 
-        Programmer programmer2 = new Programmer();
-        programmer2.name = "Luca";
-        programmer2.age = 30;
-        programmer2.wearGlasses = false;
 
-        programmer1.drinkCoffee();
-        programmer1.printDetails();
+        Programmer programmer2 = new Programmer("Luca", 30, false);
 
-        programmer2.printDetails();
-        programmer2.hasGlasses();
+
+        System.out.println(programmer1.drinkCoffee());
+        System.out.println(programmer1.printDetails());
+
+        System.out.println(programmer2.printDetails());
+        System.out.println(programmer2.hasGlasses());
     }
 }
