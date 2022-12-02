@@ -2,9 +2,9 @@ package it.develhope.exerciseClassesAndObject1;
 
 public class Programmer {
 
-    public String name;
-    public int age;
-    public boolean wearGlasses;
+    private String name;
+    private int age;
+    private boolean wearGlasses;
 
     public String drinkCoffee (){
         return "Espresso is the secret!";
